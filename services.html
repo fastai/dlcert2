@@ -1,0 +1,169 @@
+---
+layout: default
+section_id: services
+main_services:
+  - icon_class: fa fa-flask
+    title: Creative design
+    desc:
+      Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
+  - icon_class: fa fa-paper-plane-o
+    title: Creative design
+    desc:
+      Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
+  - icon_class: fa fa-tablet
+    title: Creative design
+    desc:
+      Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
+  - icon_class: fa fa-comments-o
+    title: Creative design
+    desc:
+      Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
+
+other_services:
+  - icon_class: fa fa-trophy
+    title: Design
+    desc:
+      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
+  - icon_class: fa fa-compass
+    title: Art Direction
+    desc:
+      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
+  - icon_class: fa fa-star-half-empty
+    title: Branding
+    desc:
+      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
+  - icon_class: fa fa-image
+    title: Photography
+    desc:
+      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
+  - icon_class: fa fa-dot-circle-o
+    title: Marketing
+    desc:
+      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
+
+price_boxes:
+  - type: free
+    desc: Perfect for freelancers
+    cost: 0
+    lines:
+      - 15 Users
+      - 10 Projects
+      - 30GB of Storage
+      - 5 Workspaces
+      - Private Forums
+      - Enhanced Security
+  - type: basic
+    desc: Perfect for small teams
+    cost: 20
+    lines:
+      - 15 Users
+      - 10 Projects
+      - 30GB of Storage
+      - 5 Workspaces
+      - Private Forums
+      - Enhanced Security
+  - type: plus
+    desc: Popular and hot selling
+    cost: 45
+    lines:
+      - 15 Users
+      - 10 Projects
+      - 30GB of Storage
+      - 5 Workspaces
+      - Private Forums
+      - Enhanced Security
+    class: featured
+  - type: Premium
+    desc: Perfect for big companies
+    cost: 99
+    lines:
+      - 15 Users
+      - 10 Projects
+      - 30GB of Storage
+      - 5 Workspaces
+      - Private Forums
+      - Enhanced Security
+
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h3>Our main services</h3>
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    {% for service in page.main_services %}
+      <div class='medium-3 large-3 columns'>
+        <div class='fadein mod modIconText' data-delay='{{ 200 | times:forloop.index }}'>
+          <div class='icon-text-circle'>
+            <i class='{{service.icon_class}}'></i>
+            <h3>{{service.name}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <hr>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h3>Other services</h3>
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modBoxedTextSlider'>
+        <div class='boxes'>
+          {% for service in page.other_services %}
+            <div class='box' style='background: #f9f9f9;'>
+              <i class='{{service.icon_class}}'></i>
+              <h4>{{service.title}}</h4>
+              <p>{{service.desc}}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='spacing'></div>
+  <hr>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h3>Prices</h3>
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    {% for box in page.price_boxes %}
+      <div class='medium-6 large-3 columns'>
+        <div class='mod modPriceBox {{box.class}}'>
+          <div class='info'>
+            <p class='level'>{{box.type}}</p>
+            <p class='desc'>{{box.desc}}</p>
+            <p class='price'>
+              <span class='dollar'>$</span>
+              <span class='number'>{{box.cost}}</span>
+            </p>
+          </div>
+          <div class='features'>
+            <ul>
+              {% for line in box.lines %}
+                <li class="{% cycle '', 'even' %}">{{line}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <p class='start'>
+            <a class='button small' href='http://themeforest.net/user/honryou/portfolio?ref=honryou'>Start Trial</a>
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class='two spacing'></div>
+</div>

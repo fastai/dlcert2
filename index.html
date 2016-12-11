@@ -1,0 +1,275 @@
+---
+layout: default
+section_id: home
+slides:
+  - bg: images/@stock/boxed-slide-5.jpg
+    title: Creative theme
+    tagline: It is very easy to customize
+  - bg: images/@stock/boxed-slide-4.jpg
+    title: Powerful
+    tagline: a Multi-Purpose theme
+works:
+  - image: images/@stock/one-page-work-1.jpg
+    title: Beautiful Girl
+    desc: Design &amp; Development
+    class: graphic-design
+  - image: images/@stock/one-page-work-5.jpg
+    title: Look at me
+    desc: Design &amp; Development
+    class: web-design print
+  - image: images/@stock/one-page-work-3.jpg
+    title: Am I cute
+    desc: Design &amp; Development
+    class: brand
+  - image: images/@stock/one-page-work-4.jpg
+    title: Umbrella
+    desc: Design &amp; Development
+    class: development
+
+services:
+  - icon_class: fa fa-paper-plane-o
+    title: Creative design
+    desc: Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
+  - icon_class: fa fa-tablet
+    title: Creative design
+    desc: Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
+  - icon_class: fa fa-comments-o
+    title: Creative design
+    desc: Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
+  - icon_class: fa fa-flask
+    title: Creative design
+    desc: Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.
+
+bars:
+  - title: Web Design
+    percent: 84
+  - title: Web Development
+    percent: 95
+  - title: Site Management
+    percent: 70
+  - title: Branding
+    percent: 61
+
+testimonials:
+  - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
+    author: David White
+    position: Designer at Huglab
+    avatar: images/@stock/author-avatar-1.png
+  - text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing."
+    author: David White
+    position: Designer at Huglab
+    avatar: images/@stock/author-avatar-2.png
+  - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
+    author: David White
+    position: Designer at Huglab
+    avatar: images/@stock/author-avatar-3.png
+
+clients:
+  - images/@stock/client-grey-1.png
+  - images/@stock/client-grey-2.png
+  - images/@stock/client-grey-3.png
+  - images/@stock/client-grey-4.png
+  - images/@stock/client-grey-5.png
+  - images/@stock/client-grey-6.png
+---
+
+<div class='full no-padding'>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for slide in page.slides %}
+            <div class='slide'>
+              <img alt="" src="{{slide.bg}}" />
+              <div class='caption'>
+                <p>{{slide.title}}</p>
+                <h2>{{slide.tagline}}</h2>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='full no-padding'>
+  <div class='spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p style='font-size: 1.5rem; font-style: italic;'>
+        This is the introduction of your team, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.
+      </p>
+    </div>
+  </div>
+  <hr>
+</div>
+<div class='two spacing'></div>
+<div class='row'>
+  <div class='large-12 columns'>
+    <h3>
+      Our recent work
+      /
+      <a href='portfolio.html'>View more</a>
+    </h3>
+    <div class='spacing'></div>
+  </div>
+  <div class='mod modGallery'>
+    <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
+      {% for work in page.works %}
+        <li class='{{work.class}}'>
+          <a href='portfolio-item.html'>
+            <img alt="" src="{{work.image}}" />
+            <div class='overlay' style='background: rgba(143, 221, 115, 0.8);'>
+              <div class='thumb-info'>
+                <h3>{{work.title}}</h3>
+                <p>{{work.desc}}</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div class='two spacing'></div>
+<hr>
+<div class='two spacing'></div>
+<div class='row'>
+  <div class='large-12 columns'>
+    <h3>Our services</h3>
+    <div class='two spacing'></div>
+  </div>
+</div>
+<div class='row'>
+  {% for service in page.services %}
+    <div class='medium-3 large-3 columns'>
+      <div class='fadein mod modIconText' data-delay='{{ 200 | times:forloop.index0 }}'>
+        <div class='icon-text-circle'>
+          <i class='{{service.icon_class}}'></i>
+          <h3>{{service.title}}</h3>
+          <p>{{service.desc}}</p>
+        </div>
+        <div class='two spacing'></div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<hr>
+<div class='two spacing'></div>
+<div class='row'>
+  <div class='medium-6 columns'>
+    <h3>Our skills</h3>
+    <div class='spacing'></div>
+    <div class='mod modBarGraph'>
+      <ul class='bars'>
+        {% for bar in page.bars %}
+          <li>
+            <h4 style=''>
+              {{bar.title}}
+              <strong>{{bar.percent}}%</strong>
+            </h4>
+            <p class='highlighted' data-percent='{{bar.percent}}'></p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class='two spacing'></div>
+  </div>
+  <div class='medium-6 columns'>
+    <h3>What our clients say</h3>
+    <div class='spacing'></div>
+    <div class='mod modTestimonials simple'>
+      <div class='row'>
+        <div class='small-12 columns'>
+          <div class='items'>
+            {% for t in page.testimonials  %}
+              <div class='item'>
+                <p class='quote'>{{t.text}}</p>
+                <div class='author'>
+                  <p class='author-avatar'>
+                    <img alt="" src="{{t.avatar}}" />
+                  </p>
+                  <p class='author-name'>
+                    -
+                    <strong>
+                      {{t.author}}
+                    </strong>
+                    , {{t.position}}
+                  </p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class='two spacing'></div>
+<div class='row'>
+  <div class='large-12 columns'>
+    <h3>Our clients</h3>
+    <div class='spacing'></div>
+    <div class='mod modClients' data-slides_to_show='5'>
+      <div class='clients'>
+        {% for client in page.clients %}
+          <div><img alt="" src="{{client}}" /></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class='two spacing'></div>
+<div class='row'>
+  <div class='large-12 columns'>
+    <h3>
+      Our recent posts
+      /
+      <a href='#'>View more posts</a>
+    </h3>
+    <div class='spacing'></div>
+  </div>
+</div>
+<div class='row'>
+  {% for post in site.posts %}
+    {% if forloop.index > 3 %}
+      {% break %}
+    {% endif %}
+
+
+    <div class='large-4 medium-4 columns'>
+      <div class='mod modBlogPost no_bg simple'>
+        {% for image in post.images %}
+          {% if forloop.index > 1 %}
+            {% break %}
+          {% endif %}
+          <a href="{{post.url}}"><img alt="" src="{{image}}" /></a>
+        {% endfor %}
+        <div class='content'>
+          <p class='date'>{{post.date | date: "%B %d, %Y" }}</p>
+          <h4><a href="{{post.url}}">{{post.title}}</a></h4>
+          <p>{{post.excerpt | truncatewords: 25 }}</p>
+        </div>
+      </div>
+    </div>
+
+  {% endfor %}
+  <div class='two spacing'></div>
+</div>
+<div class='full no-padding' style='background: #f5f5f5'>
+  <div class='two spacing'></div>
+  <div class='mod modCallToAction'>
+    <div class='row'>
+      <div class='medium-9 large-9 columns'>
+        <p>Like what you see here? Checkout this theme and start to build your site immediately.</p>
+      </div>
+      <div class='medium-3 large-3 columns'>
+        <a class='button' target="_blank" href='http://themeforest.net/user/honryou/portfolio?ref=honryou'>Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
