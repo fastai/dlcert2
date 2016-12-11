@@ -73,7 +73,7 @@ jQuery(document).foundation();
       e.preventDefault();
       this.submit();
       $('#thanks').show().fadeOut(5000);
-      this.trigger('reset');
+      //this.trigger('reset');
     });
 
     /*
