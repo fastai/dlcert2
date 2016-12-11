@@ -69,6 +69,14 @@ jQuery(document).foundation();
 
     });
 
+    $('form#contact_form').submit(function(e) {
+      e.preventDefault();
+      this.submit();
+      $('#thanks').show().fadeOut(5000);
+      this.trigger('reset');
+    });
+
+    /*
     $('form#contact_form').validate({
       messages: { },
       submitHandler: function(form) {
@@ -86,6 +94,7 @@ jQuery(document).foundation();
         return false;
       }
     });
+    */
 
     if($('.masonry-container').length > 0) {
 
