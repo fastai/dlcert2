@@ -159,6 +159,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  listen
 
 BUNDLED WITH
    1.13.6

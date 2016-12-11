@@ -7,13 +7,13 @@
 - name: Services
   path: services.html
   section_id: services
-- name: Portfolio
+- name: Lessons
   path: portfolio.html
   section_id: portfolio
   children:
-    - name: Portfolio
+    - name: Lesson 0
       path: portfolio.html
-    - name: Portfolio item
+    - name: Lesson 1
       path: portfolio-item.html
 - name: Contact
   path: contact.html

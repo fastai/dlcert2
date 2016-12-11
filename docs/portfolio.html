@@ -3,93 +3,43 @@ layout: default
 section_id: portfolio
 works:
   - image: images/@stock/one-page-work-1.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    class: graphic-design
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-2.jpg
-    title: Look at me
-    link_to: portfolio-item.html
-    class: web-design print
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-3.jpg
-    title: Am I cute
-    link_to: portfolio-item.html
-    class: brand
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-4.jpg
-    title: Umbrella
-    link_to: portfolio-item.html
-    class: development
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-5.jpg
-    title: Canned Bros
-    link_to: portfolio-item.html
-    class: print brand
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-6.jpg
-    title: Hale
-    link_to: portfolio-item.html
-    class: web-design
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-7.jpg
-    title: A beautiful day
-    link_to: portfolio-item.html
-    class: web-design
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-8.jpg
-    title: Flower Book
-    link_to: portfolio-item.html
-    class: graphic-design
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-2.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    class: graphic-design
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-4.jpg
-    title: Look at me
-    link_to: portfolio-item.html
-    class: web-design print
-    desc: Design &amp; Development
+    title: Lesson 0
+    desc: Lesson 0- Why deep learning. Intro to convolutions
+    class: lesson
   - image: images/@stock/one-page-work-1.jpg
-    title: Am I cute
+    title: Lesson 1
+    desc: Lesson 1- Recognizing cats and dogs
+    class: lesson
+  - image: images/@stock/one-page-work-1.jpg
+    title: Lesson 2
+    desc: Lesson 2- Convolutional neural networks
+    class: lesson
+  - image: images/@stock/one-page-work-1.jpg
+    title: Lesson 3
+    desc: Lesson 3- CNN architecture basics. Avoiding over and under-fitting
+    class: lesson
+  - image: images/@stock/one-page-work-1.jpg
+    title: Lesson 4
+    desc: Lesson 4- CNN/SGD in Excel. Pseudo-labeling. Collaborative filtering
+    class: lesson
+  - image: images/@stock/one-page-work-1.jpg
+    title: Lesson 5
+    desc: Lesson 5- Intro to NLP, keras functional API, and RNNs
+    class: lesson
+  - image: images/@stock/one-page-work-1.jpg
+    title: Lesson 6
+    desc: Lesson 6- Embeddings in Excel. Building RNNs
+    class: lesson
+  - image: images/@stock/one-page-work-1.jpg
+    title: Lesson 7
     link_to: portfolio-item.html
-    class: brand
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-6.jpg
-    title: Umbrella
-    link_to: portfolio-item.html
-    class: development
-    desc: Design &amp; Development
-
+    desc: Lesson 7- Exotic CNN architecures. RNN from scratch
+    class: lesson
 ---
 
 <div class='full'>
   <div class='row'>
     <div class='mod modGallery'>
-      <div class='gallery-nav'>
-        <ul>
-          <li class='current'>
-            <a data-cat='all' href='#'>All</a>
-          </li>
-          <li>
-            <a data-cat='graphic-design' href='#'>Graphic Design</a>
-          </li>
-          <li>
-            <a data-cat='web-design' href='#'>Web Design</a>
-          </li>
-          <li>
-            <a data-cat='brand' href='#'>Brand</a>
-          </li>
-          <li>
-            <a data-cat='development' href='#'>Development</a>
-          </li>
-          <li>
-            <a data-cat='print' href='#'>Print</a>
-          </li>
-        </ul>
-      </div>
       <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
         {% for work in page.works %}
           <li class='{{work.class}}'>
