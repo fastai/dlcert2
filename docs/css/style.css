@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+        color: #DDD;
+}
+
 @font-face {
   font-family: "Steelfish";
   src: url('../fonts/steelfish/steelfish_eb-webfont.eot');
