@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-        color: #333;
+        color: #444;
 }
 
 @font-face {
@@ -245,7 +245,7 @@ ul.shortcode-list i {
 }
 .contain-to-grid.shadowless .top-bar-section li:not(.has-form) a:not(.button):hover, .contain-to-grid.shadowless .top-bar-section li.active:not(.has-form) a:not(.button) {
   background: #f9f9f9;
-  color: #888;
+  color: #666;
 }
 .contain-to-grid.shadowless .top-bar-section li.active:not(.has-form) a:not(.button):hover {
   background: #f2f2f2;
