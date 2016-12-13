@@ -4,6 +4,9 @@
 - name: About
   path: about.html
   section_id: about
+- name: Getting Started
+  path: start.html
+  section_id: start
 - name: Lessons
   path: portfolio.html
   section_id: portfolio
