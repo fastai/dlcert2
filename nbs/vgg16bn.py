@@ -28,9 +28,9 @@ class Vgg16():
     """The VGG 16 Imagenet model"""
 
 
-    def __init__(self):
+    def __init__(self, size=(224,224), include_top=True):
         self.FILE_PATH = 'http://www.platform.ai/models/'
-        self.create()
+        self.create(size, include_top)
         self.get_classes()
 
 
@@ -60,12 +60,16 @@ class Vgg16():
     def FCBlock(self):
         model = self.model
         model.add(Dense(4096, activation='relu'))
+        model.add(BatchNormalization())
         model.add(Dropout(0.5))
 
 
-    def create(self):
+    def create(self, size, include_top):
+        if size != (224,224):
+            include_top=False
+
         model = self.model = Sequential()
-        model.add(Lambda(vgg_preprocess, input_shape=(3,224,224)))
+        model.add(Lambda(vgg_preprocess, input_shape=(3,)+size))
 
         self.ConvBlock(2, 64)
         self.ConvBlock(2, 128)
@@ -73,12 +77,17 @@ class Vgg16():
         self.ConvBlock(3, 512)
         self.ConvBlock(3, 512)
 
+        if not include_top:
+            fname = 'vgg16_bn_conv.h5'
+            model.load_weights(get_file(fname, self.FILE_PATH+fname, cache_subdir='models'))
+            return
+
         model.add(Flatten())
         self.FCBlock()
         self.FCBlock()
         model.add(Dense(1000, activation='softmax'))
 
-        fname = 'vgg16.h5'
+        fname = 'vgg16_bn.h5'
         model.load_weights(get_file(fname, self.FILE_PATH+fname, cache_subdir='models'))
 
 
