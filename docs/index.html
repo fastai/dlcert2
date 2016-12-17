@@ -77,26 +77,41 @@ bars:
     percent: 60
 
 testimonials:
-  - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
-    author: David White
-    position: Designer at Huglab
-    avatar: images/@stock/author-avatar-1.png
-  - text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing."
-    author: David White
-    position: Designer at Huglab
-    avatar: images/@stock/author-avatar-2.png
-  - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
-    author: David White
-    position: Designer at Huglab
-    avatar: images/@stock/author-avatar-3.png
+  - text: "I’ve tried (and if I’m honest) failed to scale the steep deep learning curve many times. I realise with hindsight it was the equations that were preventing me from becoming a deep learning practitioner. Jeremy brought me up to speed with the state-of-the-art, and within two weeks I was in the top half of the leaderboard for three Kaggle competitions."
+    author: Christopher Kelly
+    position: CEO- Nourish, Balance, Thrive
+    avatar: images/people/chrisk.jpeg
+  - text: "If you are looking to venture into the Deep learning field, look no further and take this course. It is very hands-on and adopts a top-down approach, which means everyone irrespective of varying knowledge can get started with implementing Deep learning models immediately. Another major factor why this course is very appealing is its emphasis on social relevance. That is, how can we use this awesome technology to serve the world better?"
+    author: Sravya Tirukkovalur
+    position: Vice President, Apache Sentry
+    avatar: images/people/sravya.jpg
+  - text: "This course filled a gap I couldn't find anywhere else&mdash;there really is no other source where I could learn from a 'code first' perspective. This means you can prod, poke, and cajole these networks in different ways, and see how they respond. You can quickly feel an intuitive perspective growing as you explore."
+    author: Matt O'Brien
+    position: Data Scientist, UCSF Neurology
+    avatar: images/people/mattob.jpeg
+  - text: "It was very empowering to be able to start training a model within minutes downloading the Jupyter notebooks. Jeremy and Rachel were excellent instructors and the content was high quality and enlightening. It was very cool to be able to read blogposts about the latest Deep Learning research and actually be able to understand it. I was surprised to be able to match academic results from just 2 years ago with pretty simple architectures."
+    author: Robin Kraft (@robinkraft)
+    position: Product Manager at Planet Labs (Satellites)
+    avatar: images/people/robink.jpeg
+  - text: "Sometimes feared whether I would be able to solve any deep learning problems, as all the research papers I read were very mathy beyond reach of simple intuitive terms. But Jeremy and Rachel (Course Professors) believe in the theory of 'Simple is Powerful', by virtue of which anyone who takes this course will be able to confidently understand the simple techniques behind the 'magic' Deep Learning."
+    author: Janardhan Shetty
+    position: Senior Big Data Engineer at Salesforce
+    avatar: images/people/shetty.jpg
 
 clients:
-  - images/@stock/client-grey-1.png
-  - images/@stock/client-grey-2.png
-  - images/@stock/client-grey-3.png
-  - images/@stock/client-grey-4.png
-  - images/@stock/client-grey-5.png
-  - images/@stock/client-grey-6.png
+  - cap1labs.png
+  - fitbit.png
+  - google.jpg
+  - ibm.gif
+  - linkedin.png
+  - microsoft.png
+  - planet_labs.jpg
+  - salesforce.png
+  - su.png
+  - ucsf.png
+  - udemy.png
+  - walmartlabs.png
+  - yelp.png
 ---
 
 <div class='full no-padding'>
@@ -104,7 +119,7 @@ clients:
   <div class='row'>
     <div class='large-12 columns'>
       <p style='font-size: 1.5rem; font-style: italic;'>
-      Welcome to fast.ai's deep learning MOOC, based on lessons recorded during the first certificate course at <a href="https://www.usfca.edu/data-institute/">The Data Insitute at USF</a>. Welcome to the start of an exciting journey into deep neural networks!
+      Welcome to fast.ai's deep learning MOOC, based on lessons recorded during the first certificate course at <a href="https://www.usfca.edu/data-institute/">The Data Insitute at USF</a>.
       </p>
     </div>
   </div>
@@ -130,6 +145,15 @@ clients:
   </div>
 </div>
 <div class='spacing'></div>
+<div class='full no-padding'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p style='font-size: 1.5rem;'>
+      This 7-week course is designed for anyone with at least a year of coding experience, and some memory of high-school math. You will start a step one&mdash;learning how to get a GPU server online suitable for deep learning&mdash;and go all the way through to creating state of the art, highly practical, models for computer vision, natural language processing, and recommendation systems.
+      </p>
+    </div>
+  </div>
+</div>
 <hr>
 <div class='row'>
   <div class='large-12 columns'>
@@ -234,12 +258,12 @@ clients:
 <div class='two spacing'></div>
 <div class='row'>
   <div class='large-12 columns'>
-    <h3>Students joined from:</h3>
+    <h3>Participants from:</h3>
     <div class='spacing'></div>
     <div class='mod modClients' data-slides_to_show='5'>
       <div class='clients'>
         {% for client in page.clients %}
-          <div><img alt="" src="{{client}}" /></div>
+          <div><img alt="" src="images/org-thumbs/{{client}}" /></div>
         {% endfor %}
       </div>
     </div>
