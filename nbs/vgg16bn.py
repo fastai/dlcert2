@@ -24,8 +24,8 @@ def vgg_preprocess(x):
     return x[:, ::-1] # reverse axis rgb->bgr
 
 
-class Vgg16():
-    """The VGG 16 Imagenet model"""
+class Vgg16BN():
+    """The VGG 16 Imagenet model with Batch Normalization for the Dense Layers"""
 
 
     def __init__(self, size=(224,224), include_top=True):
