@@ -2,53 +2,63 @@
 layout: default
 section_id: home
 slides:
-  - bg: images/titles/resnet.jpg
-    title: Designed for coders
-    tagline: If you can code, you can do deep learning
   - bg: images/titles/datainst-intro.jpg
     title: State of the art
     tagline: We show you how to get world-class results, step by step
+  - bg: images/titles/resnet.jpg
+    title: Designed for coders
+    tagline: If you can code, you can do deep learning
 works:
   - image: images/lesson-thumbs/0-convolution-intro.png
     title: Lesson 0
-    desc: Lesson 0- Why deep learning. Intro to convolutions
+    name: lesson0
+    desc: Why deep learning. Intro to convolutions
     class: lesson
   - image: images/lesson-thumbs/1-imagenet-class.png
     title: Lesson 1
-    desc: Lesson 1- Recognizing cats and dogs
+    name: lesson1
+    desc: Recognizing cats and dogs
     class: lesson
   - image: images/lesson-thumbs/2-viz.png
     title: Lesson 2
-    desc: Lesson 2- Convolutional neural networks
+    name: lesson2
+    desc: Convolutional neural networks
     class: lesson
   - image: images/lesson-thumbs/3-augment.png
     title: Lesson 3
-    desc: Lesson 3- CNN architecture basics. Avoiding over and under-fitting
+    name: lesson3
+    desc: CNN architecture basics. Avoiding over and under-fitting
     class: lesson
   - image: images/lesson-thumbs/4-conv-xl.png
     title: Lesson 4
-    desc: Lesson 4- CNN/SGD in Excel. Pseudo-labeling. Collaborative filtering
+    name: lesson4
+    desc: CNN/SGD in Excel. Pseudo-labeling. Collaborative filtering
     class: lesson
   - image: images/lesson-thumbs/5-nlp.png
     title: Lesson 5
-    desc: Lesson 5- Intro to NLP, keras functional API, and RNNs
+    name: lesson5
+    desc: Intro to NLP, keras functional API, and RNNs
     class: lesson
   - image: images/lesson-thumbs/6-embed.png
     title: Lesson 6
-    desc: Lesson 6- Embeddings in Excel. Building RNNs
+    name: lesson6
+    desc: Embeddings in Excel. Building RNNs
     class: lesson
   - image: images/lesson-thumbs/7-heatmap.png
     title: Lesson 7
-    desc: Lesson 7- Exotic CNN architecures. RNN from scratch
+    name: lesson7
+    desc: Exotic CNN architecures. RNN from scratch
     class: lesson
 
 services:
   - icon_class: fa fa-paper-plane-o
     title: Forums
     desc: Ask and answer questions on the forums - most discussion happens here
-  - icon_class: fa fa-wikipedia-w
+    link: http://forums.fast.ai/
+  - icon_class: fa fa-globe
     title: Wiki
     desc: Be sure to check the wiki first if you have a question - and help contribute too
+    link: http://wiki.fast.ai/
   - icon_class: fa fa-slack
     title: Slack
     desc: Slack is a great place to hang out for real-time chat with your fellow students
@@ -90,7 +100,17 @@ clients:
 ---
 
 <div class='full no-padding'>
-  <div class='two spacing'></div>
+  <div class='spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p style='font-size: 1.5rem; font-style: italic;'>
+      Welcome to fast.ai's deep learning MOOC, based on lessons recorded during the first certificate course at <a href="https://www.usfca.edu/data-institute/">The Data Insitute at USF</a>. Welcome to the start of an exciting journey into deep neural networks!
+      </p>
+    </div>
+  </div>
+</div>
+<div class='full no-padding'>
+  <div class='spacing'></div>
   <div class='row'>
     <div class='large-12 columns'>
       <div class='mod modBoxedSlider'>
@@ -109,30 +129,18 @@ clients:
     </div>
   </div>
 </div>
-<div class='full no-padding'>
-  <div class='spacing'></div>
-  <div class='row'>
-    <div class='large-12 columns'>
-      <p style='font-size: 1.5rem; font-style: italic;'>
-      Welcome to fast.ai's deep learning MOOC, based on lessons recorded during the first certificate course at <a href="https://www.usfca.edu/data-institute/">The Data Insitute at USF</a>. Welcome to the start of an exciting journey into deep neural networks!
-      </p>
-    </div>
-  </div>
-  <hr>
-</div>
-<div class='two spacing'></div>
+<div class='spacing'></div>
+<hr>
 <div class='row'>
   <div class='large-12 columns'>
-    <h3>
-      The lessons / <a href='portfolio.html'>View details</a>
-    </h3>
+    <h3> The lessons / <a href='lessons/lessons.html'>View details</a> </h3>
     <div class='spacing'></div>
   </div>
   <div class='mod modGallery'>
     <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
       {% for work in page.works %}
         <li class='{{work.class}}'>
-          <a href='portfolio-item.html'>
+          <a href='lessons/{{work.name}}.html'>
             <img alt="" src="{{work.image}}" />
             <div class='overlay' style='background: rgba(64, 142, 35, 0.8);'>
               <div class='thumb-info'>
@@ -159,11 +167,13 @@ clients:
   {% for service in page.services %}
     <div class='medium-3 large-3 columns'>
       <div class='fadein mod modIconText' data-delay='{{ 200 | times:forloop.index0 }}'>
+        <a href="http://wiki.fast.ai">
         <div class='icon-text-circle'>
           <i class='{{service.icon_class}}'></i>
           <h3>{{service.title}}</h3>
           <p>{{service.desc}}</p>
         </div>
+        </a>
         <div class='two spacing'></div>
       </div>
     </div>
@@ -224,7 +234,7 @@ clients:
 <div class='two spacing'></div>
 <div class='row'>
   <div class='large-12 columns'>
-    <h3>Students have come from:</h3>
+    <h3>Students joined from:</h3>
     <div class='spacing'></div>
     <div class='mod modClients' data-slides_to_show='5'>
       <div class='clients'>

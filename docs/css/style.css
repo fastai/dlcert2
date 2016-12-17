@@ -64,7 +64,7 @@ hr {
 }
 
 .full {
-  padding: 80px 0 0;
+  padding: 30px 0 0;
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -190,7 +190,7 @@ ul.shortcode-list i {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
-  background: #F9CE06;
+  background: #dead0f;
   border: 2px solid #F9CE06;
 }
 
