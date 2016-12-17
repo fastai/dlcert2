@@ -4,35 +4,35 @@ section_id: portfolio
 works:
   - image: images/lesson-thumbs/0-convolution-intro.png
     title: Lesson 0
-    desc: Lesson 0- Why deep learning. Intro to convolutions
+    desc: Why deep learning<br>Intro to convolutions
     class: lesson
   - image: images/lesson-thumbs/1-imagenet-class.png
     title: Lesson 1
-    desc: Lesson 1- Recognizing cats and dogs
+    desc: Recognizing cats and dogs
     class: lesson
   - image: images/lesson-thumbs/2-viz.png
     title: Lesson 2
-    desc: Lesson 2- Convolutional neural networks
+    desc: Convolutional neural networks
     class: lesson
   - image: images/lesson-thumbs/3-augment.png
     title: Lesson 3
-    desc: Lesson 3- CNN architecture basics. Avoiding over and under-fitting
+    desc: CNN architecture basics<br>Avoiding over and under-fitting
     class: lesson
   - image: images/lesson-thumbs/4-conv-xl.png
     title: Lesson 4
-    desc: Lesson 4- CNN/SGD in Excel. Pseudo-labeling. Collaborative filtering
+    desc: CNN/SGD in Excel<br>Pseudo-labeling<br>Collaborative filtering
     class: lesson
   - image: images/lesson-thumbs/5-nlp.png
     title: Lesson 5
-    desc: Lesson 5- Intro to NLP, keras functional API, and RNNs
+    desc: Intro to NLP<br>keras functional API<br>and RNNs
     class: lesson
   - image: images/lesson-thumbs/6-embed.png
     title: Lesson 6
-    desc: Lesson 6- Embeddings in Excel. Building RNNs
+    desc: Embeddings in Excel.<br>Building RNNs
     class: lesson
   - image: images/lesson-thumbs/7-heatmap.png
     title: Lesson 7
-    desc: Lesson 7- Exotic CNN architecures. RNN from scratch
+    desc: Exotic CNN architecures<br>RNN from scratch
     class: lesson
 ---
 
@@ -43,13 +43,17 @@ works:
         {% for work in page.works %}
           <li class='{{work.class}}'>
             <a href='{{work.link_to}}'>
+              <figure>
               <img alt="" src="{{site.url}}/{{work.image}}" />
-              <div class='overlay' style='background: rgba(143, 221, 115, 0.8);'>
+              <div class='overlay' style=
+                'margin-right: 20px; margin-left: -20px; background: rgba(143, 221, 115, 0.8);'>
                 <div class='thumb-info'>
                   <h3>{{work.title}}</h3>
                   <p>{{work.desc}}</p>
                 </div>
               </div>
+              <figcaption>{{work.title}}</figcaption>
+              </figure>
             </a>
           </li>
         {% endfor %}
