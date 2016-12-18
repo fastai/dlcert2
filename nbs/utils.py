@@ -51,6 +51,7 @@ from keras.preprocessing import image, sequence
 from keras.preprocessing.text import Tokenizer
 
 from vgg16 import *
+from vgg16bn import *
 np.set_printoptions(precision=4, linewidth=100)
 
 
@@ -199,6 +200,12 @@ def mk_square(img):
 
 def vgg_ft(out_dim):
     vgg = Vgg16()
+    vgg.ft(out_dim)
+    model = vgg.model
+    return model
+
+def vgg_ft_bn(out_dim):
+    vgg = Vgg16BN()
     vgg.ft(out_dim)
     model = vgg.model
     return model
