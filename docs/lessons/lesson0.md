@@ -1,9 +1,9 @@
 ---
 layout: lesson
 lesson: 0&mdash;Why deep learning; Intro to convolutions
-youtube_id: Th_ckFbc6bI
+youtube_id: ACU-T9L4_lI
 wiki_file: Lesson_0
-notes_file: Lesson_0_Notes
+notes_file: Lesson_0
 forum_thread: lesson-0-discussion
 prev_url: lesson2.html
 next_url: lesson3.html

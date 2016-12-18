@@ -29,12 +29,22 @@ members:
 <div class='full'>
   <div class='row'>
     <div class='medium-6 columns'>
-      <h3>Our history</h3>
+      <h3>About this course</h3>
       <div class='spacing'></div>
       <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.</p>
     </div>
     <div class='medium-6 columns'>
+      <h3>You will learn how to:</h3>
+      <div class='spacing'></div>
+      <ul>
+        <li> Set up your own GPU server in the cloud </li>
+        <li> Build, debug, and visualize a state of the art convolutional neural network (CNN) for recognizing images </li>
+        <li> Understand the components of a neural network, including activation functions, dense and convolutional layers, and optimizers </li>
+        <li> Build, debug, and visualize a recurrent neural network (RNN) for natural language processing (NLP) </li>
+        <li> Create and use specialized architectures for dealing with localization, multi-scale images, etc </li>
+        <li> Recognize and deal with over-fitting, by using data augmentation, dropout, batch normalization, and similar techniques </li>
+        <li> Build state of the art recommendation systems using neural-network based collaorative filtering </li>
+      </ul>
     </div>
   </div>
 </div>
@@ -49,7 +59,7 @@ members:
 </div>
 <div class='row'>
   {% for member in page.members %}
-    <div class='small-6 medium-3 large-3 columns'>
+    <div class='small-6 medium-4 large-4 columns'>
       <div class='mod modTeamMember style-2'>
         <div class='member'>
           <img class="avatar" alt="" src="{{site.url}}/{{member.avatar}}" />
