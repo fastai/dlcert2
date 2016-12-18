@@ -7,21 +7,16 @@ layout: default
     <div class='large-6 columns'>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.youtube_id}}"
         frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class='large-6 columns'>
-      <div  style='margin:0px 0px 0px 20px'>
-        <h3>{{page.lesson}}</h3>
-        <p>{{content}}</p>
+        <div class='spacing'></div>
         <ul class='info'>
           <li>
             <strong>Resources:</strong>
             <a href="http://wiki.fast.ai/index.php/{{page.wiki_file}}">Wiki page</a> / 
             <a href="http://wiki.fast.ai/index.php/{{page.notes_file}}">Lesson notes</a> / 
-            <a href="forums.fast.ai/t/{{page.forum_thread}}">Forum thread</a> 
+            <a href="http://forums.fast.ai/t/{{page.forum_thread}}">Forum thread</a> /
+            <a href="https://youtu.be/{{page.youtube_id}}">Youtube page</a> 
           </li>
         </ul>
-        <div class='spacing'></div>
-        <a class='button small' href='https://youtu.be/{{page.youtube_id}}'>Youtube page</a>
         <div class='spacing'></div>
         <ul class='info'>
           <li>
@@ -37,6 +32,11 @@ layout: default
             </a>
           </li>
         </ul>
+    </div>
+    <div class='large-6 columns'>
+      <div  style='margin:0px 0px 0px 20px'>
+        <h3>{{page.lesson}}</h3>
+        <p>{{content}}</p>
       </div>
     </div>
   </div>
