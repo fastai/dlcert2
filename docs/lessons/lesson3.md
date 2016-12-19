@@ -1,7 +1,7 @@
 ---
 layout: lesson
 lesson: 3&mdash;Under fitting and over fitting
-youtube_id: e3aM6XTekJc
+youtube_id: 6kwQEBMandw
 wiki_file: Lesson_3
 notes_file: Lesson_3_Notes
 forum_thread: lesson-3-discussion
