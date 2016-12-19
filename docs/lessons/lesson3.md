@@ -1,24 +1,16 @@
 ---
 layout: lesson
-lesson: 2&mdash;Convolutional neural networks
+lesson: 3&mdash;Under fitting and over fitting
 youtube_id: e3aM6XTekJc
-wiki_file: Lesson_2
-notes_file: Lesson_2_Notes
-forum_thread: lesson-2-discussion
-prev_url: lesson1.html
-next_url: lesson0.html
+wiki_file: Lesson_3
+notes_file: Lesson_3_Notes
+forum_thread: lesson-3-discussion
+prev_url: lesson0.html
+next_url: lesson4.html
 ---
 
-For last week's assignment your goal was to get into the top 50% of the Kaggle Dogs v Cats competition. This week, Jeremy shows his answer to this assignment. It's a good idea to spend a few hours giving the assignment your best shot, prior to watching this lesson, since it's the process of trying, failing, and trying again that is the basis of learning the practical skills needed to be a deep learning practitioner.
+We've now seen a number of ways to build CNNs&mdash;it's time to build a more complete understanding of how they work. In this lesson we review in more detail what a convolution does, and how they are combined with max pooling to create a CNN. We also learn about the softmax activation function, which is critical for getting good results in classification models (a *classification* model is any model that is designed to separate data items into *classes*, that is, into discrete groups). NB: If you're having trouble understanding the convolution operation, you may want to skip ahead and watch the start of [lesson 4](lesson4.html), since it opens with a spreadsheet-based explanation of convolutions.
 
-After showing how to submit a successful entry to this competition, we then learn some critical information about the loss function most commonly used for classification projects, as well as seeing how to use visualization to understand where your model is succeeding and failing.
+Then we delve into the most important skill in creating an effective model: dealing with overfitting and underfitting. The key is to first of all build a model that overfits (since then we know we have enough model capacity and know that we can train it) and then gradually use a number of strategies to reduce the overfitting. In this lesson the *most important* section is where we look at the list of techniques used to address overfitting. We suggest copying this list somewhere convenient, and refer to it often; ensure you understand what each of the steps means, and how to do them.
 
-In the second half of the lesson, we dig into the details of CNNs and fine-tuning. We start by discussing why we normally want to start with a pre-trained network, rather than starting with random weights. We then learn about two of the key foundations of neural networks:
-
-* Dense (or "fully connected") layers
-* Stochastic gradient descent (SGD)
-
-We then use this knowledge to develop an understanding of how and why fine-tuning works, including a discussion of the third key foundation of neural networks:
-
-* Activation functions (or "non-linearities")
-
+We then look at two particularly useful techniques to avoid overfitting: dropout, and data augmentation. We also discuss the extremely handy technique of pre-computing convolutional layers. Make sure you understand this technique before you continue, and practice it yourself, since we'll be using it in every lesson and every notebook from here on!
