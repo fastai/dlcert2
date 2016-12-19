@@ -15,13 +15,24 @@ testimonials1:
     author: Matt O'Brien
     position: Data Scientist, UCSF Neurology
     avatar: images/people/mattob.jpeg
+  - text: "I teach machine learning in a master’s degree program. After this course, I cannot ignore the new developments in deep learning&mdash;I will devote one third of my machine learning course to the subject. Also, I now have the tools to apply deep learning models to real world problems. Some of the best features of this course are the well-documented ipython notebooks containing the tricks needed to be a proficient deep learning practitioner. Overall, I was very impressed with this course."
+    author: Yannet Interian
+    position: Assistant Professor of Analytics, University of San Francisco
+    avatar: images/people/yannet.jpeg
   - text: "It was very empowering to be able to start training a model within minutes downloading the Jupyter notebooks. Jeremy and Rachel were excellent instructors and the content was high quality and enlightening. It was very cool to be able to read blogposts about the latest Deep Learning research and actually be able to understand it. I was surprised to be able to match academic results from just 2 years ago with pretty simple architectures."
     author: Robin Kraft (@robinkraft)
     position: Product Manager at Planet Labs (Satellites)
     avatar: images/people/robink.jpeg
 
 testimonials2:
-  - text: "Sometimes feared whether I would be able to solve any deep learning problems, as all the research papers I read were very mathy beyond reach of simple intuitive terms. But Jeremy and Rachel (Course Professors) believe in the theory of 'Simple is Powerful', by virtue of which anyone who takes this course will be able to confidently understand the simple techniques behind the 'magic' Deep Learning."
+  - text: |
+      This is a fantastic hands on learning experience. Like many data professionals outside of academia I found deep learning to be intimidating and opaque. This class changed that and empowered me to make deep learning part of the toolkit I use at Udemy. While there are a lot of resources available online about the theoretical underpinnings of deep learning this is the only course I have found that guides students through the implementation of fundamental deep learning frameworks. 
+      <br /> <br />
+      There were three things that stood out to me that made this class special: 1) you will start coding right away and see the power of neural networks in lesson one, 2) Jeremy spends a lot of the course demystifying the subject, and in the process empowers anyone to get started in the field of deep learning, 3) many ‘tricks’ on how to optimize your architecture are passed down in rapid sequence. Save yourself a lot of time by watching this course, it will take you many more hours of trial and error to learn the same content by yourself.
+    author: Sara Hooker
+    position: Data Scientist, Udemy
+    avatar: images/people/sara.png
+  - text: "Sometimes I feared whether I would be able to solve any deep learning problems, as all the research papers I read were very mathy beyond reach of simple intuitive terms. But Jeremy and Rachel (Course Professors) believe in the theory of 'Simple is Powerful', by virtue of which anyone who takes this course will be able to confidently understand the simple techniques behind the 'magic' Deep Learning."
     author: Janardhan Shetty
     position: Senior Big Data Engineer at Salesforce
     avatar: images/people/shetty.jpg
@@ -36,7 +47,7 @@ testimonials2:
 ---
 
 <div class='row'>
-  <h3>What our students say</h3>
+  <h3>What our graduates say</h3>
   <div class='medium-6 columns'>
     <div class='spacing'></div>
     <div class='modTestimonials'>
@@ -45,13 +56,13 @@ testimonials2:
           <div class='items'>
             {% for t in page.testimonials1  %}
               <div class='item'>
-                <p class='quote'>{{t.text}}</p>
                 <div class='author'>
                   <p class='author-avatar'>
                     <img alt="" src="{{t.avatar}}" />
                   </p>
                   <p class='author-name'> - <strong> {{t.author}} </strong> , {{t.position}} </p>
                 </div>
+                <p class='quote2'>{{t.text}}</p>
               </div>
               <hr />
             {% endfor %}
@@ -68,13 +79,13 @@ testimonials2:
           <div class='items'>
             {% for t in page.testimonials2 %}
               <div class='item'>
-                <p class='quote'>{{t.text}}</p>
                 <div class='author'>
                   <p class='author-avatar'>
                     <img alt="" src="{{t.avatar}}" />
                   </p>
                   <p class='author-name'> - <strong> {{t.author}} </strong> , {{t.position}} </p>
                 </div>
+                <p class='quote2'>{{t.text}}</p>
               </div>
               <hr />
             {% endfor %}

@@ -3156,6 +3156,10 @@ body {
 .modTestimonials {
   padding: 0 60px;
 }
+.modTestimonials p.quote2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
 .modTestimonials p.quote {
   font-size: 1.5rem;
   margin-bottom: 30px;
