@@ -1,7 +1,7 @@
 ---
 layout: lesson
-lesson: 7&mdash;Convolutional neural networks
-youtube_id: e3aM6XTekJc
+lesson: 7&mdash;Exotic CNN architectures; RNN from scratch
+youtube_id: Q0z-l2KRYFY
 wiki_file: Lesson_7
 notes_file: Lesson_7_Notes
 forum_thread: lesson-7-discussion

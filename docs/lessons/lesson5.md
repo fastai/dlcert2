@@ -1,7 +1,7 @@
 ---
 layout: lesson
-lesson: 5&mdash;Convolutional neural networks
-youtube_id: e3aM6XTekJc
+lesson: 5&mdash;Intro to NLP and RNNs
+youtube_id: qvRL74L81lg
 wiki_file: Lesson_5
 notes_file: Lesson_5_Notes
 forum_thread: lesson-5-discussion

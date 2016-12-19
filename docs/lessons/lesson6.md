@@ -1,7 +1,7 @@
 ---
 layout: lesson
-lesson: 6&mdash;Convolutional neural networks
-youtube_id: e3aM6XTekJc
+lesson: 6&mdash;Building RNNs
+youtube_id: ll9y1U0SoVY
 wiki_file: Lesson_6
 notes_file: Lesson_6_Notes
 forum_thread: lesson-6-discussion
