@@ -1,6 +1,6 @@
 # Site settings
 title: fast.ai
-#repository: fastai/dlcert1
+repository: fastai/dlcert1
 email: info@fast.ai
 description: > 
   fast.ai's practical deep learning MOOC for coders. Learn CNNs, RNNs, computer vision, NLP, recommendation systems, keras, theano, and much more!
@@ -8,7 +8,7 @@ description: >
 baseurl: "" # the subpath of your site
 url: "http://course.fast.ai" # the base hostname & protocol for your site
 twitter_username: fastdotai
-#github_username:  fastai
+github_username:  fastai
 
 # Build settings
 markdown: kramdown

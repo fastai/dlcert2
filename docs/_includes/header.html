@@ -24,18 +24,18 @@
 
           {% if item.children %}
             <li class="has-dropdown {{active_class}}">
-              <a href="/{{ item.path }}">{{ item.name }}</a>
+              <a href="{{ item.path }}">{{ item.name }}</a>
               <ul class='dropdown'>
                 {% for child in item.children %}
                   <li>
-                    <a href="/{{ child.path }}">{{ child.name }}</a>
+                    <a href="{{ child.path }}">{{ child.name }}</a>
                   </li>
                 {% endfor %}
               </ul>
             </li>
           {% else %}
             <li class="{{active_class}}">
-              <a href="/{{ item.path }}">{{ item.name }}</a>
+              <a href="{{ item.path }}">{{ item.name }}</a>
             </li>
           {% endif %}
         {% endfor %}

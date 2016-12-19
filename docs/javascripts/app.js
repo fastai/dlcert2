@@ -244,7 +244,7 @@ jQuery(document).foundation();
         autoplay: true,
         pauseOnHover: false,
         dots: true,
-        speed: 1500,
+        speed: 2500,
         arrows: false
       });
 
@@ -802,7 +802,7 @@ jQuery(document).foundation();
         autoplay: true,
         pauseOnHover: false,
         dots: show_dots,
-        speed: 1500,
+        speed: 3000,
         arrows: false
       });
 
