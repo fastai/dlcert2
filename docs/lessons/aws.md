@@ -1,7 +1,7 @@
 ---
 layout: lesson
 lesson: How to set up your AWS deep learning server
-youtube_id: UV6WIBi9GJQ
+youtube_id: 8rjRfW4JM2I
 wiki_file: AWS_install
 notes_file: AWS_install
 forum_thread: setup-problems-aws
@@ -12,6 +12,6 @@ Before you can start with the first full lesson, you'll need a deep learning cap
 
 This video shows all the steps necessary to set up your deep learning server, using a recently released AWS product called "P2", which has a powerful GPU with a lot of memory. It costs $0.90 per hour to run. The linked resources on the left provide more information about how and why to set this up. Remember, if you get stuck, search the forum (using the link on the left), and ask any questions you have there if you can't find an answer.
 
-*NB*: AWS needs to verify that new accounts are not fraudulent, so you'll need to make a special request for P2 access if you're a new AWS customer. The video shows how to make this request, but please note that there *has been a change*: you can now request P2 instances directly in the form, whereas when this video was created P2 instances were too new and were not listed. It is important that you don't try to create your P2 server until your request has been actioned; to check whether it has, visit <a href="https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#Limits:">this link</a> and find the row for "p2.xlarge".
+*NB*: AWS needs to verify that new accounts are not fraudulent, so you'll need to make a special request for P2 access if you're a new AWS customer. The video shows how to make this request, but please note that there *has been a change*: you can now request P2 instances directly in the form, whereas when this video was created P2 instances were too new and were not listed; also, be sure to use the 'use case description' listed in the video. It is important that you don't try to create your P2 server until your request has been actioned; to check whether it has, visit <a href="https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#Limits:">this link</a> and find the row for "p2.xlarge".
 
 PS: If you have an active Azure account, you can use their new GPU servers instead. They work nearly exactly the same way, except that you'll need to run our setup script to configure them. Details are on the wiki and help is available on the forum if you want to take this route.
