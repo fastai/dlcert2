@@ -5,6 +5,7 @@ youtube_id: Th_ckFbc6bI
 overview_id: kzt3-FHdAeM
 wiki_file: Lesson_1
 notes_file: Lesson_1_Notes
+timeline: Lesson_1_Timeline
 forum_thread: lesson-1-discussion
 prev_url: aws.html
 next_url: lesson2.html
@@ -21,4 +22,4 @@ The lesson video starts with a very brief overview of what deep learning is, and
 
 The next point discussed is how to the data for this lesson (and indeed all the computer vision projects we'll tackle) needs to be structured. This is the most important step for you to complete&mdash;if your data is not structured correctly you will not be able to train any models.
 
-Then we get into our first deep learning model. We learn how to classify dogs from cats. Rather than understanding the mathematical details of how this works, we start by learning the nuts and bolts of how to get the computer to complete the task, using 'fine-tuning', perhaps the most important skill for any deep learning practitioner. Once we've built a model that can classify dogs from cats, we then take a step back and learn about the original "pre-trained" model that we started with, and examine what it can do without any fine-tuning. Next lesson, we'll learn about how fine-tuning actually works "behind the scenes".
+Then we get into our first deep learning model (click 'Timeline' on the left to jump straight to any part of the video). We learn how to classify dogs from cats. Rather than understanding the mathematical details of how this works, we start by learning the nuts and bolts of how to get the computer to complete the task, using 'fine-tuning', perhaps the most important skill for any deep learning practitioner. Once we've built a model that can classify dogs from cats, we then take a step back and learn about the original "pre-trained" model that we started with, and examine what it can do without any fine-tuning. Next lesson, we'll learn about how fine-tuning actually works "behind the scenes".

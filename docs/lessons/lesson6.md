@@ -3,6 +3,7 @@ layout: lesson
 lesson: 6&mdash;Building RNNs
 youtube_id: ll9y1U0SoVY
 wiki_file: Lesson_6
+timeline: Lesson_6_Timeline
 notes_file: Lesson_6_Notes
 forum_thread: lesson-6-discussion
 prev_url: lesson5.html

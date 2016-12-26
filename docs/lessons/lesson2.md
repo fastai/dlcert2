@@ -5,6 +5,7 @@ youtube_id: e3aM6XTekJc
 wiki_file: Lesson_2
 notes_file: Lesson_2_Notes
 forum_thread: lesson-2-discussion
+timeline: Lesson_2_Timeline
 prev_url: lesson1.html
 next_url: lesson0.html
 ---
