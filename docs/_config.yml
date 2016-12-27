@@ -16,3 +16,6 @@ markdown: kramdown
 
 paginate: 4
 paginate_path: "blog/page:num"
+
+# Google services
+google_analytics: UA-89522379-1
