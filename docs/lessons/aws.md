@@ -7,6 +7,7 @@ notes_file: AWS_install
 forum_thread: setup-problems-aws
 prev_url: lessons.html
 next_url: lesson1.html
+# PS: We've just learned that Azure now allows new users to access GPU machines without requiring a special request, and will provide $200 of free credits! They work nearly exactly the same way as Azure, except that you'll need to run our setup script to configure them. With many thanks to Abhik Mitra, one of our MOOC participants, we now have a [setup guide](https://medium.com/@abhikprince/setting-up-an-azure-vm-for-deep-learning-bb76b453272b#.lozevofv6) showing how to do this.
 ---
 Before you can start with the first full lesson, you'll need a deep learning capable machine (that is, a computer with an Nvidia GPU in it) that you can use. For this course, most of the information we provide assumes that you are using Amazon Web Services (AWS) for this. To make it as easy as possible for you to get started with AWS, we have provided scripts that automate most of the process of setting up your AWS deep learning server.
 
@@ -16,4 +17,3 @@ This video, and most of our documentation, use the AWS region us-west-2 (Oregon)
 
 *NB*: AWS needs to verify that new accounts are not fraudulent, so you'll need to make a special request for P2 access if you're a new AWS customer. The video shows how to make this request, but please note that there *has been a change*: you can now request P2 instances directly in the form, whereas when this video was created P2 instances were too new and were not listed; also, be sure to use the 'use case description' listed in the video. It is important that you don't try to create your P2 server until your request has been actioned; to check whether it has, visit <a href="https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#Limits:">this link</a> and find the row for "p2.xlarge".
 
-PS: We've just learned that Azure now allows new users to access GPU machines without requiring a special request, and will provide $200 of free credits! They work nearly exactly the same way as Azure, except that you'll need to run our setup script to configure them. With many thanks to Abhik Mitra, one of our MOOC participants, we now have a [setup guide](https://medium.com/@abhikprince/setting-up-an-azure-vm-for-deep-learning-bb76b453272b#.lozevofv6) showing how to do this.
