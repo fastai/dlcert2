@@ -25,6 +25,9 @@
       path: /lessons/lesson6.html
     - name: 7&mdash;CNN Architectures
       path: /lessons/lesson7.html
+- name: Part 2
+  path: /part2.html
+  section_id: part2
 - name: Contact
   path: /contact.html
   section_id: contact

@@ -1,0 +1,49 @@
+---
+layout: part2
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-6 columns'>
+      <ul class='info'>
+        <li>
+          <a href='{{page.prev_url}}' title='previous'>
+            <i class='icon-left-open'></i>
+          </a>
+          <a href='lessons2.html' title='back to lessons'>
+            <i class='icon-layout'></i>
+          </a>
+          <a href='{{page.next_url}}' title='next'>
+            <i class='icon-right-open'></i>
+          </a>
+        </li>
+      </ul>
+
+      {% if page.overview_id %}
+      <div class='spacing'></div>
+      <ul class='info'><li>
+          <strong>Overview:</strong>
+      </li></ul>
+      <iframe width="498" height="280" src="https://www.youtube.com/embed/{{page.overview_id}}"
+        frameborder="0" allowfullscreen></iframe>
+      {% endif %}
+      <div class='spacing'></div>
+      <ul class='info'><li>
+        <strong>Lesson:</strong>
+        <a href="http://forums.fast.ai/t/{{page.forum_thread}}">Discussion</a> /
+        <a href="http://forums.fast.ai/t/{{page.wiki_file}}">Wiki</a> / 
+        <a href="https://youtu.be/{{page.youtube_id}}">Youtube</a> 
+      </li></ul>
+      <iframe width="498" height="280" src="https://www.youtube.com/embed/{{page.youtube_id}}"
+        frameborder="0" allowfullscreen></iframe>
+      <div class='spacing'></div>
+    </div>
+    <div class='large-6 columns'>
+      <div  style='margin:0px 0px 0px 20px'>
+        <h3>{{page.lesson}}</h3>
+        <p>{{content}}</p>
+      </div>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
