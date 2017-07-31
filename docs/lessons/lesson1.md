@@ -10,6 +10,8 @@ forum_thread: lesson-1-discussion
 prev_url: aws.html
 next_url: lesson2.html
 ---
+**Important note**: All files in the course are now available from [files.fast.ai](http://files.fast.ai), rather than platform.ai, as shown in the videos. We have attempted to update all mentions of platform.ai to files.fast.ai on the wiki, forums, etc, but youtube does not allow us to change the videos themselves.
+
 Welcome to the first full lesson of Practical Deep Learning For Coders! Before you start this lesson, be sure to have completed setup of your deep learning server. See the [AWS Lesson](aws.html) to learn how to do this, if you haven't already.
 
 Each lesson page includes links to course notes, forum discussion, and (most importantly) a wiki page. Nearly all the participants in the original in-person course said that they found these resources very important for successfully completing the course. So be sure to make the most of them! And be sure to carefully read the [Getting Started](../start.html) page to find out how this course is designed and how to get the most out of it. (Also, apologies that the questions from the audience are hard to hear - we get a special audience mic from lesson 3 onwards which resolves that problem.)
