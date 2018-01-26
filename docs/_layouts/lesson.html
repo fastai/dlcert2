@@ -19,20 +19,7 @@ layout: default
         </li>
       </ul>
 
-      {% if page.overview_id %}
       <div class='spacing'></div>
-      <ul class='info'><li>
-          <strong>Overview:</strong>
-      </li></ul>
-      <iframe width="498" height="280" src="https://www.youtube.com/embed/{{page.overview_id}}"
-        frameborder="0" allowfullscreen></iframe>
-      {% endif %}
-      <div class='spacing'></div>
-      <ul class='info'><li>
-        <strong>Lesson:</strong>
-        <a href="http://forums.fast.ai/t/{{page.forum_thread}}">Forum</a> /
-        <a href="https://youtu.be/{{page.youtube_id}}">Youtube</a> 
-      </li></ul>
       <iframe width="498" height="280" src="https://www.youtube.com/embed/{{page.youtube_id}}"
         frameborder="0" allowfullscreen></iframe>
       <div class='spacing'></div>
@@ -41,6 +28,7 @@ layout: default
       <div  style='margin:0px 0px 0px 20px'>
         <h3>{{page.lesson}}</h3>
         <p>{{content}}</p>
+        <p> Click here for <a href="http://forums.fast.ai/t/{{page.forum_thread}}">links, notes, and discussion</a> of this lesson. </p>
       </div>
     </div>
   </div>

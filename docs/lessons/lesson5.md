@@ -1,15 +1,13 @@
 ---
 layout: lesson
-lesson: 6&mdash;Interpreting embeddings; RNNs from scratch
-youtube_id: sHcLkfRrgoQ
-forum_thread: wiki-lesson-6
-prev_url: lesson5.html
-next_url: lesson7.html
+lesson: 5&mdash;Collaborative filtering; Inside the training loop
+youtube_id: J99NV9Cr75I
+forum_thread: wiki-lesson-5
+prev_url: lesson4.html
+next_url: lesson6.html
 ---
 
-Today is a very busy lesson! We first learn how to interpret the collaborative filtering embeddings we created last week, and use that knowledge to answer the question: "what is the worst movie of all time?"
+You will learn about collaborative filtering through the example of making movie recommendations, and talk about key developments that occurred during the Netflix prize.
 
-Then we cover what is perhaps the most practically important topic in the whole course: how to use deep learning to model "structured data" such as database tables and spreadsheets, as well as time series. It turns out that not only is deep learning often the most accurate modeling approach for this tasks, it can be the easiest approach to develop too.
-
-We close out the lesson with an introduction to recurrent neural networks (RNNs), and use an RNN to write a new philosophical treatise...
+We will dig into some lower level details of deep learning: what happens inside the training loop, how optimizers like momentum and Adam work, and regularization using weight decay.  You will learn how to think spatially about math concepts like the ‘chain rule’, ‘jacobian’, and ‘hessian’.
 
