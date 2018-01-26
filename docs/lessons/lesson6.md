@@ -1,19 +1,11 @@
 ---
 layout: lesson
-lesson: 6&mdash;Building RNNs
-youtube_id: ll9y1U0SoVY
-wiki_file: Lesson_6
-timeline: Lesson_6_Timeline
-notes_file: Lesson_6_Notes
-forum_thread: lesson-6-discussion
-prev_url: lesson5.html
-next_url: lesson7.html
+lesson: 2&mdash;Convolutional neural networks
+youtube_id: JNxcznsrRb8
+forum_thread: wiki-lesson-2
+prev_url: lesson1.html
+next_url: lesson3.html
 ---
 
-This lesson starts by introducing a new tool, the *MixIterator*, which will (finally!) allow us to fully implement the pseudo-labeling technique we learnt a couple of lessons ago. This tool allows us to improve our best MNIST model even further, well into the top 5 on the 'academic leaderboard'.
+You will learn more about image classification, covering several core deep learning concepts that are necessary to get good performance: what a learning rate is and how to choose a good one, how to vary your learning rate over time, how to improve your model with data augmentation (including test-time augmentation).  We also share practical tips (such as training on smaller images), an 8-step process to train a world-class image classifier, and more information on your hardware setup (including crestle, paperspace, and AWS as options).
 
-We then look again at embeddings, using a spreadsheet to show how they really work "behind the scenes". We look both at embeddings for collaborative filterings, as well as embeddings for NLP.
-
-After these shorter topics, we're ready to get to today's main event: building RNNs. We look at a variety of different models for RNNs, and create each one from scratch using basic keras building blocks.
-
-Finally, we look at Theano for the first time, the library that keras is using to actually implement computation. In order to better understand how theano and RNNs work, we create our own RNN implementation in pure theano. Learning theano isn't necessary for everyone, but it can be critical when you discover that you need to implement something that doesn't yet exist in keras, or modify something for your particular project. It also helps building a deeper understanding of how deep learning really works.

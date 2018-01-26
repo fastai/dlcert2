@@ -9,45 +9,40 @@ slides:
     title: Designed for coders
     tagline: If you can code, you can do deep learning
 works:
-  - image: images/lesson-thumbs/1-imagenet-class.png
+  - image: images/lesson-thumbs/th-lesson1.jpg
     title: Lesson 1
     name: lesson1
     desc: Recognizing cats and dogs
     class: lesson
-  - image: images/lesson-thumbs/2-viz.png
+  - image: images/lesson-thumbs/th-lesson2.jpg
     title: Lesson 2
     name: lesson2
-    desc: Convolutional neural networks
+    desc: Improving your image classifier
     class: lesson
-  - image: images/lesson-thumbs/0-convolution-intro.png
-    title: Lesson 0
-    name: lesson0
-    desc: Why deep learning. Intro to convolutions
-    class: lesson
-  - image: images/lesson-thumbs/3-augment.png
+  - image: images/lesson-thumbs/th-lesson3.jpg
     title: Lesson 3
     name: lesson3
-    desc: CNN architecture basics. Avoiding over and under-fitting
+    desc: Understanding convolutions
     class: lesson
-  - image: images/lesson-thumbs/4-conv-xl.png
+  - image: images/lesson-thumbs/th-lesson4.jpg
     title: Lesson 4
     name: lesson4
-    desc: CNN/SGD in Excel. Pseudo-labeling. Collaborative filtering
+    desc: Structured, time series, &amp; language models
     class: lesson
-  - image: images/lesson-thumbs/5-nlp.png
+  - image: images/lesson-thumbs/th-lesson5.jpg
     title: Lesson 5
     name: lesson5
-    desc: Intro to NLP, keras functional API, and RNNs
+    desc: Collaborative filtering; inside the training loop
     class: lesson
-  - image: images/lesson-thumbs/6-embed.png
+  - image: images/lesson-thumbs/th-lesson6.jpg
     title: Lesson 6
     name: lesson6
-    desc: Embeddings in Excel. Building RNNs
+    desc: Interpreting embeddings; RNNs from scratch
     class: lesson
-  - image: images/lesson-thumbs/7-heatmap.png
+  - image: images/lesson-thumbs/th-lesson7.jpg
     title: Lesson 7
     name: lesson7
-    desc: Exotic CNN architecures. RNN from scratch
+    desc: Resnets from scratch
     class: lesson
 
 services:
@@ -137,10 +132,10 @@ clients:
   <div class='row'>
     <div class='large-7 columns'>
       <p style='font-size: 1.5rem;'>
-      Welcome to fast.ai's 7 week course, <b>Practical Deep Learning For Coders, Part 1</b>, taught by Jeremy Howard (<a href="http://www.kaggle.com">Kaggle's</a> #1 competitor 2 years running, and founder of <a href="http://www.enlitic.com">Enlitic</a>). Learn how to build state of the art models without needing graduate-level math&mdash;but also without dumbing anything down. Oh and one other thing... it's totally free!
+      Welcome to the <b>2018 edition</b> of fast.ai's 7 week course, <b>Practical Deep Learning For Coders, Part 1</b>, taught by Jeremy Howard (<a href="http://www.kaggle.com">Kaggle's</a> #1 competitor 2 years running, and founder of <a href="http://www.enlitic.com">Enlitic</a>). Learn how to build state of the art models without needing graduate-level math&mdash;but also without dumbing anything down. Oh one other thing... it's totally free! And there's a whole community of thousands of other learners ready to help you with your journey&emdash;just head over to <a href="http://forums.fast.ai/">forums.fast.ai</a> if you need any help, or just want to chat to other deep learning learners.
       </p>
       <p style='font-size: 1.5rem;'>
-      When you're done here, head over to part 2, <a href="part2.html">Cutting Edge Deep Learning for Coders</a>, to continue your learning.
+      If you need to access the older 2017 edition of the course, it's available at <a href="http://course17.fast.ai">course17.fast.ai</a>. However note that the 2018 version teaches much faster and more accurate models across more domains, so we highly recommend using it, instead of the old one.
       </p>
     </div>
     <div class='modTestimonials simple'>
@@ -188,7 +183,7 @@ clients:
   <div class='row'>
     <div class='large-10 columns'>
       <p style='font-size: 1.2rem;'>
-      This 7-week course is designed for anyone with at least a year of coding experience, and some memory of high-school math. You will start with step one&mdash;learning how to get a GPU server online suitable for deep learning&mdash;and go all the way through to creating state of the art, highly practical, models for computer vision, natural language processing, and recommendation systems. There are around 20 hours of lessons, and you should plan to spend around <b>10 hours a week</b> for 7 weeks to complete the material. The course is based on lessons recorded during the first certificate course at <a href="https://www.usfca.edu/data-institute/">The Data Institute at USF</a>. Part 2 was taught at the Data Institute from Feb 27, 2017, and is <a href="part2.html">available here</a>.
+      This 7-week course is designed for anyone with at least a year of coding experience, and some memory of high-school math. You will start with step one&mdash;learning how to get a GPU server online suitable for deep learning&mdash;and go all the way through to creating state of the art, highly practical, models for computer vision, natural language processing, and recommendation systems. There are around 20 hours of lessons, and you should plan to spend around <b>10 hours a week</b> for 7 weeks to complete the material. The course is based on lessons recorded during the first certificate course at <a href="https://www.usfca.edu/data-institute/">The Data Institute at USF</a>.
       </p>
     </div>
     <div class='large-2 columns'>
@@ -313,43 +308,4 @@ clients:
 </div>
 <hr>
 <div class='two spacing'></div>
-<!--
-<div class='row'>
-  <div class='large-12 columns'>
-    <h3>
-      Our recent posts
-      /
-      <a href='#'>View more posts</a>
-    </h3>
-    <div class='spacing'></div>
-  </div>
-</div>
-<div class='row'>
-  {% for post in site.posts %}
-    {% if forloop.index > 3 %}
-      {% break %}
-    {% endif %}
-
-
-    <div class='large-4 medium-4 columns'>
-      <div class='mod modBlogPost no_bg simple'>
-        {% for image in post.images %}
-          {% if forloop.index > 1 %}
-            {% break %}
-          {% endif %}
-          <a href="{{post.url}}"><img alt="" src="{{image}}" /></a>
-        {% endfor %}
-        <div class='content'>
-          <p class='date'>{{post.date | date: "%B %d, %Y" }}</p>
-          <h4><a href="{{post.url}}">{{post.title}}</a></h4>
-          <p>{{post.excerpt | truncatewords: 25 }}</p>
-        </div>
-      </div>
-    </div>
-
-  {% endfor %}
-  <div class='two spacing'></div>
-</div>
--->
-
 
