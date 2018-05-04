@@ -1,18 +1,13 @@
 ---
 layout: lesson2
-lesson: 9&mdash;Generative Models
-youtube_id: I-P363wSv0Q
-wiki_file: lesson-9-wiki
-forum_thread: lesson-9-discussion
+lesson: 9&mdash;Object Detection 
+youtube_id: 2HKbG7bGRIM
+forum_thread: part-2-lesson-9-wiki
 prev_url: lesson8.html
 next_url: lesson10.html
 ---
 
-Today we'll learn about the extraordinarily powerful and widely useful technique of _generative models_. These are models that don't just spit out a classification, but create a whole new image, sound, etc. They can be used, for example, with images, to:
+In today’s lesson we’ll move from single object to multi-object detection. It turns out that this slight difference makes things much more challenging. In fact, most students found this the most challenging lesson in the whole course. Not because any one piece is highly complex, but because there’s a lot of pieces, so it really tests your understanding of the foundations we’ve learnt so far. So don’t worry if a lot of details are unclear on first viewing – come back to this lesson from time to time as you complete the rest of the course, and you should find more and more of it making sense!
 
-* Improve photos (colorization, noise removal, increase resolution, etc)
-* Create art
-* Find and segment (localize) objects
-* and much more...
+Today’s focus is on the *single shot multibox detector* (SSD). This is a way to handle multi-object detection by using a loss function that can combine losses from multiple objects, across both localization and classification. It also uses a custom architecture that takes advantage of the difference receptive fields of different layers of a CNN. And we’ll see how to handle data augmentation in situations like this one where the dependent variable requires augmentation too. Finally, we’ll discuss and simple but powerful trick called *focal loss* which is used to get state of the art results in this field.
 
-We'll try using this approach for _super resolution_ (i.e. increasing the resolution of an image), and then you'll get to try building your own system for rapidly adding the style of any artist to your photos.
