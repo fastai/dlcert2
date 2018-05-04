@@ -19,5 +19,5 @@ Each lesson page includes a link to a forum topic that includes a hyperlinked ti
 
 We learn today how to classify dogs from cats. Rather than understanding the mathematical details of how this works, we start by learning the nuts and bolts of how to get the computer to complete the task, using 'fine-tuning', perhaps the most important skill for any deep learning practitioner. In a later lesson we'll learn about how fine-tuning actually works "behind the scenes".
 
-An important point discussed is how to data for this lesson needs to be structured. This is the most important step for you to complete&mdash;if your data is not structured correctly you will not be able to train any models.
+An important point discussed is how the data for this lesson needs to be structured. This is the most important step for you to complete&mdash;if your data is not structured correctly you will not be able to train any models.
 
