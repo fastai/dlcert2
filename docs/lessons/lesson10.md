@@ -1,7 +1,7 @@
 ---
 layout: lesson2
 lesson: 10&mdash;NLP Classification and Translation
-youtube_id:_ercfViGrgY
+youtube_id: h5Tz7gZT9Fo
 forum_thread: part-2-lesson-10-wiki
 prev_url: lesson9.html
 next_url: lesson11.html

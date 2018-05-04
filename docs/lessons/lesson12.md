@@ -1,7 +1,7 @@
 ---
 layout: lesson2
 lesson: 12&mdash; Generative Adversarial Networks (GANs)
-youtube_id:UqpwXKtkgvk
+youtube_id: ondivPiwQho
 forum_thread: part-2-lesson-12-wiki
 prev_url: lesson11.html
 next_url: lesson13.html

@@ -1,7 +1,7 @@
 ---
 layout: lesson2
 lesson: 11&mdash;Neural Translation
-youtube_id:NFVKDa5W35I
+youtube_id: tY0n9OT5_nA
 forum_thread: part-2-lesson-11-wiki
 prev_url: lesson10.html
 next_url: lesson12.html

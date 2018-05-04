@@ -1,7 +1,7 @@
 ---
 layout: lesson2
 lesson: 14&mdash;Super resolution; Image segmentation with Unet
-youtube_id:nG3tT31nPmQ
+youtube_id: nG3tT31nPmQ
 forum_thread: part-2-lesson-14-wiki
 prev_url: lesson13.html
 next_url: lessons2.html

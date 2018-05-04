@@ -1,7 +1,7 @@
 ---
 layout: lesson2
 lesson: 13&mdash;Image Enhancement
-youtube_id:a5SBxR58fMc
+youtube_id: xXXiC4YRGrQ
 forum_thread: part-2-lesson-13-wiki
 prev_url: lesson12.html
 next_url: lesson14.html
