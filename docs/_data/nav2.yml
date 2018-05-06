@@ -5,19 +5,19 @@
   path: /lessons/lessons2.html
   section_id: portfolio
   children:
-    - name: 8&mdash;Artistic Style
+    - name: 8&mdash;Object detection
       path: /lessons/lesson8.html
-    - name: 9&mdash;Generative Models
+    - name: 9&mdash;Single shot multibox detector (SSD)
       path: /lessons/lesson9.html
-    - name: 10&mdash;Multi-modal &amp; GANs
+    - name: 10&mdash;NLP classification and transfer learning
       path: /lessons/lesson10.html
-    - name: 11&mdash;Memory Networks
+    - name: 11&mdash;Neural translation; Multi-modal learning
       path: /lessons/lesson11.html
-    - name: 12&mdash;Attentional Models
+    - name: 12&mdash;DarkNet; Generative Adversarial Networks
       path: /lessons/lesson12.html
-    - name: 13&mdash;Neural Translation
+    - name: 13&mdash;CycleGANs; Data ethics; Style transfer
       path: /lessons/lesson13.html
-    - name: 14&mdash;Time Series &amp; Segmentation
+    - name: 14&mdash;Super resolution; Segmentation with Unets
       path: /lessons/lesson14.html
 - name: Contact
   path: /contact.html
