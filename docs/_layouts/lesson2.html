@@ -19,23 +19,11 @@ layout: part2
         </li>
       </ul>
 
-      {% if page.overview_id %}
       <div class='spacing'></div>
-      <ul class='info'><li>
-          <strong>Overview:</strong>
-      </li></ul>
-      <iframe width="498" height="280" src="https://www.youtube.com/embed/{{page.overview_id}}"
-        frameborder="0" allowfullscreen></iframe>
-      {% endif %}
-      <div class='spacing'></div>
-      <ul class='info'><li>
-        <strong>Lesson:</strong>
-        <a href="http://forums.fast.ai/t/{{page.forum_thread}}">Discussion</a> /
-        <a href="https://youtu.be/{{page.youtube_id}}">Youtube</a> 
-      </li></ul>
       <iframe width="498" height="280" src="https://www.youtube.com/embed/{{page.youtube_id}}"
         frameborder="0" allowfullscreen></iframe>
       <div class='spacing'></div>
+	<p>Click the square on the bottom right of the video to view full-screen.<br />More information about this lesson available at <a href="http://forums.fast.ai/t/{{page.forum_thread}}">the lesson wiki</a>.</p> 
     </div>
     <div class='large-6 columns'>
       <div  style='margin:0px 0px 0px 20px'>

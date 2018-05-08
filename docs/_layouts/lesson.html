@@ -20,15 +20,18 @@ layout: default
       </ul>
 
       <div class='spacing'></div>
-      <iframe width="498" height="280" src="https://www.youtube.com/embed/{{page.youtube_id}}"
+      <ul class='info'><li>
+        <strong>Lesson:</strong>
+      </li></ul>
+      <iframe width="498" height="280" src="https://www.youtube.com/embed/{{page.youtube_id}}?modestbranding=1"
         frameborder="0" allowfullscreen></iframe>
       <div class='spacing'></div>
+	<p>Click the square on the bottom right of the video to view full-screen.<br />More information about this lesson available at <a href="http://forums.fast.ai/t/{{page.forum_thread}}">the lesson wiki</a>.</p> 
     </div>
     <div class='large-6 columns'>
       <div  style='margin:0px 0px 0px 20px'>
         <h3>{{page.lesson}}</h3>
         <p>{{content}}</p>
-        <p> Click here for <a href="http://forums.fast.ai/t/{{page.forum_thread}}">links, notes, and discussion</a> of this lesson. </p>
       </div>
     </div>
   </div>
