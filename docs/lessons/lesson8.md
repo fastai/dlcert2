@@ -1,7 +1,7 @@
 ---
 layout: lesson2
 lesson: 8&mdash;Object Detection 
-youtube_id:  b8D6Bwck9QM
+youtube_id: Z0ssNAbe81M
 forum_thread: part-2-lesson-8-wiki
 prev_url: lessons2.html
 next_url: lesson9.html
