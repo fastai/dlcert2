@@ -1,6 +1,6 @@
 ---
 layout: lessonml1
-lesson: 8&mdash;Waterfall, Extrapolation and RF from Scratch
+lesson: 8&mdash;Gradient Descent and Logistic Regression
 youtube_id: DzE0eSdy5Hk 
 forum_thread: wiki-lesson-thread-lesson-5
 notes_url: http://forums.fast.ai/t/lesson-5-wiki
