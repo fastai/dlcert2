@@ -25,7 +25,9 @@ layout: ml1
       <div class='spacing'></div>
 	    <p>Click the square on the bottom right of the video to view full-screen.<br />
          More information about this lesson available at <a href="http://forums.fast.ai/t/{{page.forum_thread}}">the lesson wiki</a>.<br/>
+         {% if page.notes_url %}
          There are also <a href={{page.notes_url}}>Notes</a> available.
+         {% endif %}
       </p> 
     </div>
     <div class='large-6 columns'>

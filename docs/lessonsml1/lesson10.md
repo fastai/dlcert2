@@ -2,8 +2,8 @@
 layout: lessonml1
 lesson: 10&mdash; More NLP and Columnar Data
 youtube_id: 37sFIak42Sc 
-forum_thread: wiki-lesson-thread-lesson-5
-notes_url: http://forums.fast.ai/t/lesson-5-wiki
+forum_thread: wiki-lesson-thread-lesson-10
+notes_url: http://forums.fast.ai/t/unofficial-lecture-10-notes/8538
 prev_url: lesson9.html
 next_url: lesson11.html
 ---

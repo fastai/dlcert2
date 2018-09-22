@@ -2,8 +2,8 @@
 layout: lessonml1
 lesson: 11&mdash;Embeddings
 youtube_id: XJ_waZlJU8g 
-forum_thread: wiki-lesson-thread-lesson-5
-notes_url: http://forums.fast.ai/t/lesson-5-wiki
+forum_thread: lesson-11-wiki-thread
+notes_url: 
 prev_url: lesson10.html
 next_url: lesson12.html
 ---

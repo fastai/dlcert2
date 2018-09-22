@@ -2,8 +2,8 @@
 layout: lessonml1
 lesson: 9&mdash;Regularization, Learning Rates and NLP
 youtube_id: PGC0UxakTvM 
-forum_thread: wiki-lesson-thread-lesson-5
-notes_url: http://forums.fast.ai/t/lesson-5-wiki
+forum_thread: wiki-lesson-thread-lesson-9
+notes_url: http://forums.fast.ai/t/unofficial-lecture-9-notes/8539
 prev_url: lesson8.html
 next_url: lesson10.html
 ---

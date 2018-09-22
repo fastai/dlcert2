@@ -2,8 +2,8 @@
 layout: lessonml1
 lesson: 12&mdash; Complete Rossmann, Ethical Issues
 youtube_id: 3jl2h9hSRvc 
-forum_thread: wiki-lesson-thread-lesson-5
-notes_url: http://forums.fast.ai/t/lesson-5-wiki
+forum_thread: wiki-lesson-thread-lesson-12
+notes_url: 
 prev_url: lesson11.html
 next_url: lessonsml1.html
 ---
