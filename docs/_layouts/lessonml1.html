@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: ml1
 ---
 
 <div class='full'>
@@ -10,7 +10,7 @@ layout: default
           <a href='{{page.prev_url}}' title='previous'>
             <i class='icon-left-open'></i>
           </a>
-          <a href='lessons.html' title='back to lessons'>
+          <a href='lessonsml1.html' title='back to lessons'>
             <i class='icon-layout'></i>
           </a>
           <a href='{{page.next_url}}' title='next'>
@@ -20,13 +20,13 @@ layout: default
       </ul>
 
       <div class='spacing'></div>
-      <ul class='info'><li>
-        <strong>Lesson:</strong>
-      </li></ul>
       <iframe width="498" height="280" src="https://www.youtube.com/embed/{{page.youtube_id}}?modestbranding=1"
         frameborder="0" allowfullscreen></iframe>
       <div class='spacing'></div>
-	<p>Click the square on the bottom right of the video to view full-screen.<br />square on the bottom right at <a href="http://forums.fast.ai/t/{{page.forum_thread}}">the lesson wiki</a>.</p> 
+	    <p>Click the square on the bottom right of the video to view full-screen.<br />
+         More information about this lesson available at <a href="http://forums.fast.ai/t/{{page.forum_thread}}">the lesson wiki</a>.<br/>
+         There are also <a href={{page.notes_url}}>Notes</a> available.
+      </p> 
     </div>
     <div class='large-6 columns'>
       <div  style='margin:0px 0px 0px 20px'>

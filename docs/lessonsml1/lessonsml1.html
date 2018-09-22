@@ -1,0 +1,40 @@
+---
+layout: ml1 
+section_id: portfolio
+works:
+  - image: images/lesson-thumbs/ml-lesson1.jpg
+    title: Lesson 1
+    name: lesson1
+    desc: Introduction to Random Forests 
+    class: lesson
+    link_to: /lessonsml1/lesson1.html
+---
+
+<div class='full'>
+  <div class='row'>
+    <p>These lessons are shown in suggested viewing order.</p>
+  </div>
+  <div class='row'>
+    <div class='mod modGallery'>
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
+        {% for work in page.works %}
+          <li class='{{work.class}}'>
+            <a href='{{work.link_to}}'>
+              <figure>
+              <img alt="" src="{{site.url}}/{{work.image}}" />
+              <div class='overlay' style=
+                'margin-right: 20px; margin-left: -20px; background: rgba(143, 221, 115, 0.8);'>
+                <div class='thumb-info'>
+                  <h3>{{work.title}}</h3>
+                  <p>{{work.desc}}</p>
+                </div>
+              </div>
+              <figcaption>{{work.title}}</figcaption>
+              </figure>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
