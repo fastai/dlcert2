@@ -13,6 +13,8 @@
       path: /lessonsml1/lesson3.html
     - name: 4&mdash;Feature Importance, Tree Interpreter
       path: /lessonsml1/lesson4.html
+    - name: 5&mdash;Waterfall, Extrapolation and RF from Scratch
+      path: /lessonsml1/lesson5.html
 
 - name: Contact
   path: /contact.html
