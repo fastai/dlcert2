@@ -1,0 +1,106 @@
+---
+layout: ml1 
+section_id: portfolio
+works:
+  - image: images/lesson-thumbs/ml-lesson1.jpg
+    title: Lesson 1
+    name: lesson1
+    desc: Introduction to Random Forests 
+    class: lesson
+    link_to: /lessonsml1/lesson1.html
+  - image: images/lesson-thumbs/ml-lesson2.jpg
+    title: Lesson 2
+    name: lesson2
+    desc: Random Forest Deep Dive 
+    class: lesson
+    link_to: /lessonsml1/lesson2.html
+  - image: images/lesson-thumbs/ml-lesson3_2.jpg
+    title: Lesson 3
+    name: lesson3
+    desc: Performance, Validation and Model Interpretation
+    class: lesson
+    link_to: /lessonsml1/lesson3.html
+  - image: images/lesson-thumbs/ml-lesson4_2.jpg
+    title: Lesson 4
+    name: lesson4
+    desc: Feature Importance, Tree Interpreter
+    class: lesson
+    link_to: /lessonsml1/lesson4.html
+  - image: images/lesson-thumbs/ml-lesson5_2.jpg
+    title: Lesson 5
+    name: lesson5
+    desc: Extrapolation and RF from Scratch 
+    class: lesson
+    link_to: /lessonsml1/lesson5.html
+  - image: images/lesson-thumbs/ml-lesson6.jpg
+    title: Lesson 6
+    name: lesson6
+    desc: Data Products and Live Coding
+    class: lesson
+    link_to: /lessonsml1/lesson6.html
+  - image: images/lesson-thumbs/ml-lesson7.jpg
+    title: Lesson 7
+    name: lesson7
+    desc: RF from Scratch and Gradient Descent
+    class: lesson
+    link_to: /lessonsml1/lesson7.html
+  - image: images/lesson-thumbs/ml-lesson8.jpg
+    title: Lesson 8
+    name: lesson8
+    desc: Gradient Descent and Logistic Regression
+    class: lesson
+    link_to: /lessonsml1/lesson8.html
+  - image: images/lesson-thumbs/ml-lesson9.jpg
+    title: Lesson 9
+    name: lesson9
+    desc: Regularization, Learning Rates and NLP
+    class: lesson
+    link_to: /lessonsml1/lesson9.html
+  - image: images/lesson-thumbs/ml-lesson10.jpg
+    title: Lesson 10
+    name: lesson10
+    desc: More NLP and Columnar Data
+    class: lessonj
+    link_to: /lessonsml1/lesson10.html
+  - image: images/lesson-thumbs/ml-lesson11.jpg
+    title: Lesson 11
+    name: lesson11
+    desc: Embeddings
+    class: lesson
+    link_to: /lessonsml1/lesson11.html
+  - image: images/lesson-thumbs/ml-lesson12.jpg
+    title: Lesson 12
+    name: lesson12
+    desc: Complete Rossmann, Ethical Issues
+    class: lesson
+    link_to: /lessonsml1/lesson12.html
+---
+
+<div class='full'>
+  <div class='row'>
+    <p>These lessons are shown in suggested viewing order.</p>
+  </div>
+  <div class='row'>
+    <div class='mod modGallery'>
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
+        {% for work in page.works %}
+          <li class='{{work.class}}'>
+            <a href='{{work.link_to}}'>
+              <figure>
+              <img alt="" src="{{site.url}}/{{work.image}}" />
+              <div class='overlay' style=
+                'margin-right: 20px; margin-left: -20px; background: rgba(143, 221, 115, 0.8);'>
+                <div class='thumb-info'>
+                  <h3>{{work.title}}</h3>
+                  <p>{{work.desc}}</p>
+                </div>
+              </div>
+              <figcaption>{{work.title}}</figcaption>
+              </figure>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

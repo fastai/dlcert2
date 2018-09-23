@@ -1,48 +1,66 @@
 ---
-layout: default
-section_id: home
-slides:
-  - bg: images/titles/datainst-intro.jpg
-    title: State of the art
-    tagline: We show you how to get world-class results, step by step
-  - bg: images/titles/resnet.jpg
-    title: Designed for coders
-    tagline: If you can code, you can do deep learning
+layout: ml1 
+section_id: ml1 
 works:
-  - image: images/lesson-thumbs/th-lesson1.jpg
+  - image: images/lesson-thumbs/ml-lesson1.jpg
     title: Lesson 1
     name: lesson1
-    desc: Recognizing cats and dogs
+    desc: Introduction to Random Forests 
     class: lesson
-  - image: images/lesson-thumbs/th-lesson2.jpg
+  - image: images/lesson-thumbs/ml-lesson2.jpg
     title: Lesson 2
     name: lesson2
-    desc: Improving your image classifier
+    desc: Random Forest Deep Dive 
     class: lesson
-  - image: images/lesson-thumbs/th-lesson3.jpg
+  - image: images/lesson-thumbs/ml-lesson3_2.jpg
     title: Lesson 3
     name: lesson3
-    desc: Understanding convolutions
+    desc: Performance, Validation and Model Interpretation
     class: lesson
-  - image: images/lesson-thumbs/th-lesson4.jpg
+  - image: images/lesson-thumbs/ml-lesson4_2.jpg
     title: Lesson 4
     name: lesson4
-    desc: Structured, time series, &amp; language models
+    desc: Feature Importance, Tree Interpreter
     class: lesson
-  - image: images/lesson-thumbs/th-lesson5.jpg
+  - image: images/lesson-thumbs/ml-lesson5_2.jpg
     title: Lesson 5
     name: lesson5
-    desc: Collaborative filtering; inside the training loop
+    desc: Extrapolation and RF from Scratch 
     class: lesson
-  - image: images/lesson-thumbs/th-lesson6.jpg
+  - image: images/lesson-thumbs/ml-lesson6.jpg
     title: Lesson 6
     name: lesson6
-    desc: Interpreting embeddings; RNNs from scratch
+    desc: Data Products and Live Coding
     class: lesson
-  - image: images/lesson-thumbs/th-lesson7.jpg
+  - image: images/lesson-thumbs/ml-lesson7.jpg
     title: Lesson 7
     name: lesson7
-    desc: Resnets from scratch
+    desc: RF from Scratch and Gradient Descent
+    class: lesson
+  - image: images/lesson-thumbs/ml-lesson8.jpg
+    title: Lesson 8
+    name: lesson8
+    desc: Gradient Descent and Logistic Regression
+    class: lesson
+  - image: images/lesson-thumbs/ml-lesson9.jpg
+    title: Lesson 9
+    name: lesson9
+    desc: Regularization, Learning Rates and NLP
+    class: lesson
+  - image: images/lesson-thumbs/ml-lesson10.jpg
+    title: Lesson 10
+    name: lesson10
+    desc: More NLP and Columnar Data
+    class: lessonj
+  - image: images/lesson-thumbs/ml-lesson11.jpg
+    title: Lesson 11
+    name: lesson11
+    desc: Embeddings
+    class: lesson
+  - image: images/lesson-thumbs/ml-lesson12.jpg
+    title: Lesson 12
+    name: lesson12
+    desc: Complete Rossmann, Ethical Issues
     class: lesson
 
 services:
@@ -59,9 +77,9 @@ services:
     desc: fast.ai announcements and articles will be posted to the blog
     link: http://www.fast.ai/
   - icon_class: fa fa-list-ol
-    title: Part 2
-    desc: When you're done here, head over there!
-    link: http://course.fast.ai/part2.html
+    title: Part 1
+    desc: New to deep learning? Start here!
+    link: http://course.fast.ai/
 
 bars:
   - title: Pragmatic coding
@@ -132,14 +150,9 @@ clients:
 <div class='full no-padding'>
   <div class='spacing'></div>
   <div class='row'>
-    <div class='large-12 columns'>
-      <p style='font-size: 1.2rem;'>
-      <b>Note from Jeremy</b>: <i>Do you want to study deep learning with me in person? I'll be teaching the brand new version of this course at the <a href="https://www.usfca.edu/data-institute">Data Institute at USF</a> in San Francisco from late-October 2018. For details or to apply, see the <a href="https://www.usfca.edu/data-institute/certificates/deep-learning-part-one">course web site</a>.</i>
-      </p>
-    </div>
     <div class='large-7 columns'>
       <p style='font-size: 1.5rem;'>
-      Welcome to the <b>2018 edition</b> of fast.ai's 7 week course, <b>Practical Deep Learning For Coders, Part 1</b>, taught by Jeremy Howard (<a href="http://www.kaggle.com">Kaggle's</a> #1 competitor 2 years running, and founder of <a href="http://www.enlitic.com">Enlitic</a>). Learn how to build state of the art models without needing graduate-level math&mdash;but also without dumbing anything down. Oh one other thing... it's totally free! And there's a whole community of thousands of other learners ready to help you with your journey&mdash;just head over to <a href="http://forums.fast.ai/">forums.fast.ai</a> if you need any help, or just want to chat to other deep learning learners.
+      Welcome to <b>Introduction to Machine Learning for Coders!</b> taught by Jeremy Howard  (<a href="http://www.kaggle.com">Kaggle's</a> #1 competitor 2 years running, and founder of <a href="http://www.enlitic.com">Enlitic</a>). Learn the most important machine learning models, including how to create them yourself from scratch, as well as key skills in data preparation, model validation, and building data products. 
       </p>
     </div>
     <div class='modTestimonials simple'>
@@ -162,32 +175,12 @@ clients:
     </div>
   </div>
 </div>
-<div class='full no-padding'>
-  <div class='spacing'></div>
-  <div class='row'>
-    <div class='large-12 columns'>
-      <div class='mod modBoxedSlider'>
-        <div class='slides'>
-          {% for slide in page.slides %}
-            <div class='slide'>
-              <img alt="" src="{{slide.bg}}" />
-              <div class='caption'>
-                <p>{{slide.title}}</p>
-                <h2>{{slide.tagline}}</h2>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 <div class='spacing'></div>
 <div class='full no-padding'>
   <div class='row'>
     <div class='large-10 columns'>
       <p style='font-size: 1.2rem;'>
-      This 7-week course is designed for anyone with at least a year of coding experience, and some memory of high-school math. You will start with step one&mdash;learning how to get a GPU server online suitable for deep learning&mdash;and go all the way through to creating state of the art, highly practical, models for computer vision, natural language processing, and recommendation systems. There are around 20 hours of lessons, and you should plan to spend around <b>10 hours a week</b> for 7 weeks to complete the material. The course is based on lessons recorded during the first certificate course at <a href="https://www.usfca.edu/data-institute/">The Data Institute at USF</a>.
+      There are around 24 hours of lessons, and you should plan to spend around 8 hours a week for 12 weeks to complete the material. The course is based on lessons recorded at USF for the <a href="https://www.usfca.edu/arts-sciences/graduate-programs/data-science">MS in Data Science</a> program.
       </p>
     </div>
     <div class='large-2 columns'>
@@ -198,14 +191,14 @@ clients:
 <hr>
 <div class='row'>
   <div class='large-12 columns'>
-    <h3> The lessons / <a href='lessons/lessons.html'>View details</a> </h3>
+    <h3> The lessons / <a href='lessonsml1/lessonsml1.html'>View details</a> </h3>
     <div class='spacing'></div>
   </div>
   <div class='mod modGallery'>
     <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
       {% for work in page.works %}
         <li class='{{work.class}}'>
-          <a href='lessons/{{work.name}}.html'>
+          <a href='lessonsml1/{{work.name}}.html'>
             <img alt="" src="{{work.image}}" />
             <div class='overlay' style='background: rgba(64, 142, 35, 0.8);'>
               <div class='thumb-info'>
