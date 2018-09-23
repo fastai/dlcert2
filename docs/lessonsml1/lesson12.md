@@ -1,7 +1,7 @@
 ---
 layout: lessonml1
 lesson: 12&mdash; Complete Rossmann, Ethical Issues
-youtube_id: 3jl2h9hSRvc 
+youtube_id: 5_xFdhfUnvQ 
 forum_thread: wiki-lesson-thread-lesson-12
 notes_url: 
 prev_url: lesson11.html
