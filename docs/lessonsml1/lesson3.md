@@ -1,6 +1,6 @@
 ---
 layout: lessonml1
-lesson: 3&mdash; Memory, Performance, Validation and Model Interpretation
+lesson: 3&mdash; Performance, Validation and Model Interpretation
 youtube_id: YSFG_W8JxBo
 forum_thread: wiki-lesson-thread-lesson-3
 notes_url: https://medium.com/@hiromi_suenaga/machine-learning-1-lesson-3-fa4065d8cb1e

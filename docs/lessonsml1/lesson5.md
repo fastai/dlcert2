@@ -1,6 +1,6 @@
 ---
 layout: lessonml1
-lesson: 5&mdash;Waterfall, Extrapolation and RF from Scratch
+lesson: 5&mdash;Extrapolation and RF from Scratch
 youtube_id: 3jl2h9hSRvc 
 forum_thread: lesson-5-wiki
 notes_url: https://medium.com/@hiromi_suenaga/machine-learning-1-lesson-5-df45f0c99618

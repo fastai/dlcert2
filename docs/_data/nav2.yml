@@ -28,6 +28,6 @@
 - name: Part 1
   path: /index.html
   section_id: home
-- name: ML 1
+- name: Machine Learning
   path: /ml1.html
   section_id: ml1

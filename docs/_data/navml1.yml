@@ -1,4 +1,4 @@
-- name: ML 1
+- name: Machine Learning
   path: /ml1.html
   section_id: ml1
 - name: Lessons
@@ -9,11 +9,11 @@
       path: /lessonsml1/lesson1.html
     - name: 2&mdash;Random Forest Deep Dive
       path: /lessonsml1/lesson2.html
-    - name: 3&mdash;Memory, Performance, Validation and Model Interpretation
+    - name: 3&mdash;Performance, Validation and Model Interpretation
       path: /lessonsml1/lesson3.html
     - name: 4&mdash;Feature Importance, Tree Interpreter
       path: /lessonsml1/lesson4.html
-    - name: 5&mdash;Waterfall, Extrapolation and RF from Scratch
+    - name: 5&mdash;Extrapolation and RF from Scratch
       path: /lessonsml1/lesson5.html
     - name: 6&mdash;Data Products and Live Coding
       path: /lessonsml1/lesson6.html
