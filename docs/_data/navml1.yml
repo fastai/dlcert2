@@ -35,9 +35,6 @@
 - name: Blog
   path: http://www.fast.ai/
   section_id: blog
-- name: Part 1
+- name: Deep Learning
   path: /index.html
   section_id: home
-- name: Part 2
-  path: /part2.html
-  section_id: part2
