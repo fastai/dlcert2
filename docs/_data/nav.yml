@@ -29,7 +29,7 @@
   path: /part2.html
   section_id: part2
 - name: Machine Learning
-  path: /ml1.html
+  path: /ml.html
   section_id: ml1 
 - name: Contact
   path: /contact.html
