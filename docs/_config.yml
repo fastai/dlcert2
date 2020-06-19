@@ -6,7 +6,7 @@ email: info@fast.ai
 description: > 
   fast.ai's practical deep learning MOOC for coders. Learn CNNs, RNNs, computer vision, NLP, recommendation systems, pytorch, time series, and much more
 baseurl: "" # the subpath of your site
-url: "http://course.fast.ai" # the base hostname & protocol for your site
+url: "http://course18.fast.ai" # the base hostname & protocol for your site
 twitter_username: fastdotai
 github_username:  fastai
 
